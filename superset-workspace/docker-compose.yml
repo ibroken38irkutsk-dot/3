@@ -28,6 +28,7 @@ services:
       - ./docker-init.sh:/app/docker-init.sh:ro
       - ./data:/app/data:ro
       - ../ddus:/app/ddus:ro
+      - ../kit:/app/kit:ro
       - superset_home:/app/superset_home
     command: ["/bin/bash", "/app/docker-init.sh"]
     ports:
